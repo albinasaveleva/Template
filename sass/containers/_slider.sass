@@ -1,0 +1,45 @@
+.slider
+  width: 100%
+  padding-bottom: 47px
+
+  background-image: url(../assets/slider-background.png)
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: cover
+  &__content
+    display: flex
+    align-items: center
+    flex-direction: column
+  &__title
+    margin-bottom: 15px
+
+    font-weight: 800
+    font-size: 70px
+    color: $White
+    text-transform: uppercase
+    text-align: center
+    & > span
+      color: rgba(247, 96, 14, 1)
+  &__description
+    max-width: 800px
+    width: 100%
+    margin-bottom: 58px
+
+    font-weight: normal
+    font-size: 25px
+    line-height: 40px
+    text-align: center
+    word-spacing: -1px
+    color: $White
+  &__buttons
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    margin-bottom: 195px
+  &__button
+    @include Button
+    &:not(:last-child)
+      margin-right: 25px
+    &:hover
+      @include Button_type_orange

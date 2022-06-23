@@ -1,0 +1,63 @@
+$White: #FFFFFF
+$Grey: #3b434c
+$Orange: #f7600e
+  
+@mixin Button
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 212px
+  height: 52px
+  background-color: transparent
+  border: 1px solid rgba(255, 255, 255, 0.2)
+  border-radius: 10px
+
+  font-weight: 600
+  font-size: 16px
+  text-align: center
+  text-transform: uppercase
+  text-decoration: none
+  color: #FFFFFF
+
+  cursor: pointer
+@mixin Button_type_orange
+  background-color: $Orange
+  border: 1px solid $Orange
+@mixin Section-title
+  margin-bottom: 14px
+  font-weight: 600
+  font-size: 35px
+  text-align: center
+@mixin Section-description
+  text-align: center
+  font-weight: normal
+  font-size: 16px
+  line-height: 30px
+  word-spacing: 0.5px
+@mixin Form-input
+  height: 52px
+  display: flex
+  align-items: center
+
+  font-size: 16px
+  line-height: 40px
+  color: $Grey
+  font-weight: 400
+  
+  outline: none
+  border: none
+  border-radius: 10px
+  background-color: $White
+@mixin Form-textarea
+  font-size: 16px
+  color: $Grey
+  font-weight: 400
+
+  outline: none
+  border: none
+  border-radius: 10px
+  background-color: $White
+
+
+
+  

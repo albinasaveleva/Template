@@ -1,0 +1,35 @@
+.newsletter
+  background-image: url(../assets/newsletter-background.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 100px 0
+  &__form
+    display: flex
+    align-items: center
+    justify-content: center
+  &__input
+    @include Form-input
+    max-width: 565px
+    width: 100%
+    margin-right: 28px
+    padding: 0 22px
+
+    font-weight: 300
+    word-spacing: -1px
+    &:placeholder
+      font-weight: 300
+      font-size: 16px
+      word-spacing: -1px
+      color: $Grey
+  &__button
+    @include Button
+    @include Button_type_orange
+    width: 270px
+    &:hover
+      border: 1px solid White
+      background-color: $White
+      color: $Orange
+    &:active
+      border: 1px solid White
+      background-color: $White
+      color: $Orange
