@@ -299,9 +299,6 @@ p, h1, h2, h3, h4, h5, h6 {
   height: inherit;
   object-fit: cover;
 }
-.works .portfolio__card .card__image:hover + .card__info {
-  display: flex;
-}
 .works .portfolio__card .card__info {
   position: absolute;
   top: 0;
