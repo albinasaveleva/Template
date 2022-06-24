@@ -174,5 +174,21 @@
       <span class="copyright">© 2022 COPYRIGHT</span>
     </div>
   </footer>
+  <script>
+    document.addEventListener('mouseover', (e) => {
+      const target = e.target;
+      const parent = target.closest('.portfolio__card');
+      if (target.closest('.portfolio__card')) {
+        parent.querySelector('.card__info').style.display = 'flex'
+      }
+    })
+    document.addEventListener('mouseout', (e) => {
+      const target = e.target;
+      const parent = target.closest('.portfolio__card');
+      if (target.closest('.portfolio__card')) {
+        parent.querySelector('.card__info').style.display = ''
+      }
+    })
+  </script>
 </body>
 </html>
